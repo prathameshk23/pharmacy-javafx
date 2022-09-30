@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.afterlogin">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="107.0" style="-fx-background-color: #F5F2EA;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="33.0" prefWidth="145.0" text="Dashboard" textFill="#0d7ab1">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Line endX="5.91912841796875" endY="-2.8283891677856445" startX="-100.70710754394531" startY="-2.8283963203430176" />
+            <Button fx:id="userinfo" mnemonicParsing="false" onAction="#user" prefHeight="33.0" prefWidth="92.0" style="-fx-background-color: rgb(71,241,255);" text="User Info">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="buy" mnemonicParsing="false" onAction="#buy" prefHeight="33.0" prefWidth="92.0" style="-fx-background-color: rgb(71,241,255);" text="Buy">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="sales" mnemonicParsing="false" onAction="#sales" prefHeight="33.0" prefWidth="92.0" style="-fx-background-color: rgb(71,241,255);" text="Sales">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="stock" mnemonicParsing="false" onAction="#stocks" prefHeight="33.0" prefWidth="92.0" style="-fx-background-color: rgb(71,241,255);" text="Stock List">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="371.0" fitWidth="465.0" layoutX="15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/My%20folder/demo/src/img/med.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="54.0" layoutY="33.0" prefHeight="117.0" prefWidth="191.0" style="-fx-font-weight: bold;" text="Welcome" textFill="#47f1ff">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
